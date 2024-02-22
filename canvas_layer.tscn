@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4kqmld04xw5l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gnq6n"]
+bg_color = Color(1, 0.164706, 0.0980392, 1)
+
+[node name="Score" type="CanvasLayer"]
+
+[node name="ScorePanel" type="Panel" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gnq6n")
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -26.0
+offset_right = 63.0
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 28
+text = "Score: "
+horizontal_alignment = 1
+vertical_alignment = 1
